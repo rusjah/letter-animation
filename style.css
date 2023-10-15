@@ -7,6 +7,7 @@
 body {
     height: 100vh;
     width: 100vw;
+    background-color: #3a3d46;
 }
 
 .container {
@@ -81,4 +82,20 @@ body {
     border: 3px solid  rgb(172, 202, 229);
     rotate: z -25deg;
     z-index: 2;
+}
+
+.shadow {
+    position: absolute;
+    left: -100px;
+    bottom: -50px;
+    width: 500px;
+    height: 30px;
+    background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.letter-box:hover ~ .shadow {
+    width: 400px;
+    transform: translateX(50px);
 }
